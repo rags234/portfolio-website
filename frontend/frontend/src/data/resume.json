@@ -1,0 +1,92 @@
+{
+    "name": "RAJAT SAGAR MEHTA",
+    "locationLine": "Montreal, Quebec",
+    "contactLine": "rasame587@gmail.com | (226) 961-6981",
+    "links": [
+      { "label": "LinkedIn", "href": "https://linkedin.com/in/rajat-sagar-mehta-45b227211" },
+      { "label": "GitHub", "href": "https://github.com/rags234" }
+    ],
+    "meta": [
+      "Eligibility: Authorized to work in Canada (Permanent Resident)",
+      "Language Proficiency: English, French"
+    ],
+    "workExperience": [
+      {
+        "company": "Virtusa",
+        "role": "Technology Engineer",
+        "location": "Gurugram, India",
+        "dates": "Mar 2022 – Dec 2022",
+        "bullets": [
+          "Designed and developed RESTful APIs for a CRM software in an Agile environment using Spring Boot, enabling faster feature delivery for enterprise clients.",
+          "Migrated infrastructure to AWS and introduced serverless Lambda functions, improving scalability and reducing downtime by 20%.",
+          "Mentored an intern by reviewing code, setting up CI/CD pipelines, and promoting API design best practices, improving overall team delivery speed."
+        ]
+      },
+      {
+        "company": "Amdocs",
+        "role": "Software Engineering Associate",
+        "location": "Pune, India",
+        "dates": "Aug 2020 – Feb 2022",
+        "bullets": [
+          "Collaborated with a global team in a virtual environment to build CRM solutions for telecom clients using Java and Spring Boot.",
+          "Designed and implemented 10+ RESTful APIs to manage offer data (e.g., mobile add-ons, BYOD plans), serving thousands of daily users.",
+          "Optimized backend performance by eliminating redundant service calls, achieving a 20% increase in application throughput.",
+          "Delivered real-time production support by troubleshooting API failures and database bottlenecks, ensuring 99.9% uptime for client systems."
+        ]
+      },
+      {
+        "company": "Rise11 Technologies",
+        "role": "Junior Software Engineer",
+        "location": "Gurgaon, India",
+        "dates": "May 2018 – Jul 2019",
+        "bullets": [
+          "Integrated Razorpay payment gateway into web applications, enabling secure and seamless online transactions.",
+          "Developed and maintained backend services using Java and REST APIs, managing data persistence with MongoDB.",
+          "Collaborated with senior engineers on full-stack projects, gaining hands-on experience in end-to-end product delivery."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "school": "Loyalist College in Toronto",
+        "program": "Ontario College Graduate Certificate in Cloud Computing (81%, Dean’s List)",
+        "location": "Toronto, ON, Canada",
+        "dates": "Jan 2023 – Aug 2024"
+      },
+      {
+        "school": "Thapar Institute of Engineering and Technology",
+        "program": "Bachelor of Engineering (B.E.) in Computer Science",
+        "location": "India",
+        "dates": "Jul 2016 – Jun 2020"
+      }
+    ],
+    "certifications": [
+      "Microsoft Azure Developer (AZ-204) — Issued: Mar 2024 – Present",
+      "AWS Certified Cloud Practitioner — Issued: Dec 2023 – Present",
+      "Google Cloud Professional Data Engineer — Issued: Mar 2024 – Present"
+    ],
+    "skills": {
+      "Languages": ["Java", "JavaScript", "Python"],
+      "Frameworks": ["Spring Boot", "React.js", "Node.js", "Express.js"],
+      "Databases": ["MySQL", "MongoDB"],
+      "Tools": ["Git", "Docker", "AWS", "Kafka"]
+    },
+    "projects": [
+      {
+        "name": "MERN Online Bookstore",
+        "tech": ["MongoDB", "Express.js", "React.js", "Node.js"],
+        "bullets": ["Developed a full-stack bookstore application with authentication and CRUD operations."]
+      },
+      {
+        "name": "Portfolio Website",
+        "tech": ["React.js", "CSS", "HTML"],
+        "bullets": ["Built a personal portfolio showcasing projects, skills, and certifications."]
+      },
+      {
+        "name": "Currency Calculator & Event-Driven Microservices",
+        "tech": ["Spring Boot", "Apache Kafka", "REST APIs"],
+        "bullets": ["Implemented currency conversion service and event-driven architecture with Kafka integration."]
+      }
+    ]
+  }
+  
