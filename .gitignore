@@ -9,6 +9,12 @@ backend/target
 backend/.env
 backend/.env.*
 
-# OS
+# OS / IDE
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
