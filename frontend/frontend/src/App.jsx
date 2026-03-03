@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Resume from "./pages/Resume";
+import Resume from "./pages/resume";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import AdminProjects from "./pages/AdminProjects";
