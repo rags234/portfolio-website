@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 
-const API_BASE = import.meta.env.VITE_API_BASE;
+// Use one env var everywhere.
+// Fallback is only for local dev.
+const API_BASE =
+  import.meta.env.VITE_API_BASE?.replace(/\/+$/, "") || "http://localhost:8080";
 
 function Section({ title, children }) {
   return (
@@ -16,6 +19,8 @@ export default function Projects() {
   const [status, setStatus] = useState({ type: "loading", text: "Loading..." });
 
   useEffect(() => {
+    let cancelled = false;
+
     async function load() {
       try {
         setStatus({ type: "loading", text: "Loading..." });
@@ -24,17 +29,25 @@ export default function Projects() {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
         const data = await res.json();
-        setProjects(data);
+        if (cancelled) return;
+
+        setProjects(Array.isArray(data) ? data : []);
         setStatus({ type: "success", text: "" });
       } catch (e) {
+        if (cancelled) return;
+
         setStatus({
           type: "error",
-          text: "Failed to load projects. Is backend running on :8080 and CORS enabled?",
+          text:
+            "Failed to load projects. Check API base URL (VITE_API_BASE) and backend CORS.",
         });
       }
     }
 
     load();
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   return (
@@ -84,6 +97,12 @@ export default function Projects() {
               </div>
             </div>
           ))}
+
+          {projects.length === 0 && (
+            <p className="text-sm text-neutral-700">
+              No projects found yet.
+            </p>
+          )}
         </div>
       )}
     </Section>

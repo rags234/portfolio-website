@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 
-const API_BASE = import.meta.env.VITE_API_BASE;
+const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8080";
 const PROJECTS_API = `${API_BASE}/api/v1/projects`;
 const LOGIN_API = `${API_BASE}/api/v1/auth/login`;
 
